@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de Cafe 9">
+    <title>Blog Café9</title>
+
+    <!-- PREFETCH -->
+    <link rel="prefetch" href="https://cafe9.netlify.app/nosotros.html" as="document">
+
+    <!-- PRELOAD -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header__content">
+            <div class="container">
+                <div class="bar">
+                    <a class="logo" href="index.html">
+                        <h1 class="logo__name no-margin centrar-texto">Blog Café <span class="logo__bold">9</span></h1>
+                    </a>
+
+                    <nav class="navigation">
+                        <a href="nosotros.html" class="navigation__link">nosotros</a>
+                        <a href="tienda.html" class="navigation__link">Tienda 9</a>
+                        <a href="contacto.html" class="navigation__link">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="header__text">
+                <h2 class="no-margin">Rincón del gato 9</h2>
+                <p class="no-margin">Hablando de Cafe, Hookas y más</p>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Main content -->
+    <div class="container main-container">
+        <main class="mainpost">
+            <h3>Nuestro Blog</h3>
+
+            <article class="post">
+                <div class="post__image">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="./Blog Café9_files/blog1.jpg" alt="imagen blog">
+                    </picture>
+                </div>
+
+                <div class="post__content">
+                    <h4 class="no-margin">Variedades de Café</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facilis maxime quis consequatur cupiditate itaque reiciendis repellat, commodi pariatur consequuntur aliquam quo? Exercitationem provident ipsam obcaecati, recusandae laudantium sed tenetur.</p>
+                    <a href="post.html" class="button button--primary">Leer Entrada</a>
+                </div>
+            </article> <!-- Fin del articulo -->
+
+            <article class="post">
+                <div class="post__image">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="./Blog Café9_files/blog2.jpg" alt="imagen blog">
+                    </picture>
+                </div>
+
+                <div class="post__content">
+                    <h4 class="no-margin">Los sabores de Tabaco</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facilis maxime quis consequatur cupiditate itaque reiciendis repellat, commodi pariatur consequuntur aliquam quo? Exercitationem provident ipsam obcaecati, recusandae laudantium sed tenetur.</p>
+                    <a href="post.html" class="button button--primary">Leer Entrada</a>
+                </div>
+            </article> <!-- Fin del articulo -->
+
+            <article class="post">
+                <div class="post__image">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="./Blog Café9_files/blog3.jpg" alt="imagen blog">
+                    </picture>
+                </div>
+
+                <div class="post__content">
+                    <h4 class="no-margin">De Hookahs, Shishas y Narguiles </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facilis maxime quis consequatur cupiditate itaque reiciendis repellat, commodi pariatur consequuntur aliquam quo? Exercitationem provident ipsam obcaecati, recusandae laudantium sed tenetur.</p>
+                    <a href="post.html" class="button button--primary">Leer Entrada</a>
+                </div>
+            </article> <!-- Fin del articulo -->
+        </main>
+
+        <aside class="sidebar">
+            <h3>Nuestros Productos</h3>
+
+            <ul class="product no-padding">
+                <li class="desc-product">
+                    <h4 class="no-margin">Nuestras variedades de Café</h4>
+                    <p class="desc-product__label">Precios: <span class="desc-product__price">Desde $ 270 MXN / Kg</span>     
+                    </p>
+                    <a href="tienda.html" class="button button--secundary">Mas información sobre nuestros productos</a>
+                </li>
+                <li class="desc-product">
+                    <h4 class="no-margin">Nuestra Variedad de Tabaco</h4>
+                    <p class="desc-product__label">Precios: <span class="desc-product__price">Desde $ 100.00 MXN</span>     
+                    </p>
+                    <a href="tienda.html" class="button button--secundary">Mas información sobre nuestros productos</a>
+                </li>
+            </ul>
+
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="bar">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__name no-margin centrar-texto">Blog Café <span class="logo__bold">9</span></h1>
+                </a>
+
+                <nav class="navigation">
+                    <a href="nosotros.html" class="navigation__link">nosotros</a>
+                    <a href="tienda.html" class="navigation__link">Tienda 9</a>
+                    <a href="contacto.html" class="navigation__link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/modernizr.js"></script>
+</body>
+</html>

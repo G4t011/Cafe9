@@ -1,0 +1,312 @@
+/* custom properties */
+:root {
+    --fuenteHeading: 'PT sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --negro: #000;
+    --gris: #303030;
+    --blanco: #fff;
+    --turquesa: #05e9f5;
+    --azulOscuro: #0163d3;
+    --naranja: #ff6014;
+    --amarillo: #fef65f;
+    --verde: #88e87f;
+    --amapola: #fd293e;
+    }
+
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%; /* 1 rem = 10px */
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color: var(--negro);
+}
+
+/* Globales */
+.container {    
+    /* max-width: 120rem;
+    width: 90%; */
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--amapola);
+}
+h1, h2, h3, h4, p {
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    line-height: 1.2;
+}
+p {
+    font-family: var(--fuenteParrafos);
+}
+
+
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* utilities */
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+/* Header */
+/* this part of code (.webp) we can do it cuz we added modernizer.js and detects if nav supports or not webp images */
+.webp .header {
+    background-image: url(../img/gato9.webp);
+}
+.no-webp .header {
+    background-image: url(../img/gato9.jpg);
+}
+
+.header {
+    height: 60rem;
+    background-size: cover;/* cubre el area del tamaño de la pagina */
+    background-repeat: no-repeat;
+    background-position: center right;/* posiciona la imagen dependiendo del tamaño de la pagina */
+    position: relative;
+}
+.header__content {
+    position: absolute;
+    background-color: rgb(0 0 0 / 50%);
+    width: 100%;
+    height: 100%;
+}
+
+.header__text {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .header__text {
+        margin-top: 15rem;
+    }
+}
+.bar {
+    margin-top: 4rem    ;
+}
+
+@media (min-width: 768px) {
+    .bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    color: var(--blanco);
+}
+
+.logo__name {
+    font-weight: 400;
+}
+.logo__bold {
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .navigation {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+
+.navigation__link {
+    display: block; /* elements change to stock position */
+    text-align: center;
+     font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+/* Main content */
+
+@media (min-width: 768px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.post {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.post:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.button {
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--gris);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .button {
+        display: inline-block;
+    }
+}
+.button:hover {
+    cursor: pointer;
+}
+
+.button--primary {
+    background-color: var(--turquesa);
+}
+.button--secundary {
+    background-color: var(--amapola);
+}
+
+.product {
+    list-style: none;
+}
+
+.desc-product {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.desc-product:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.desc-product__label,
+.item__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.desc-product__price,
+.item__price {
+    font-weight: normal;
+}
+
+.desc-product__label,
+.desc-product__price,
+.item__label,
+.item__price {
+    font-size: 2rem;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--gris);
+    padding: 3rem 0;
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .about-us,
+    .blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+}
+
+/* TIENDA 9 */
+
+.item {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+@media (min-width: 768px) {
+    .item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+}
+
+.item:last-of-type {
+    border-bottom: none;
+}
+
+/* contacto */
+.webp .contact-bg {
+    background-image: url(../img/contact.webp);
+}
+.no-webp .contact-bg {
+    background-image: url(../img/contact.jpg);
+}
+
+.contact-bg {
+
+    height: 40rem;/* Necessary to give height to the image */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.form {
+    background-color: var(--gris);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+    color: var(--blanco);
+}
+
+.field {
+    display: flex;
+    margin-bottom: 3rem;
+    /* gap: 2rem; */
+}
+.field__label {
+    flex: 0 0 9rem; /* gives a specific size to the labels */
+    text-align: right;
+    padding-right: 2rem;
+}
+.field__spot {
+    flex: 1;
+    border: 1px solid var(--negro);
+}
+.field__spot--textarea {
+    height: 20rem;
+}
